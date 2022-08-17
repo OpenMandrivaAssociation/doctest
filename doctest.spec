@@ -2,15 +2,14 @@
 
 Name: doctest
 Version: 2.4.9
-Release: %mkrel 1
+Release: 1
 Summary: Feature-rich header-only C++ testing framework
 License: MIT
 URL: https://github.com/doctest/doctest
 Source0: https://github.com/doctest/doctest/archive/v%{version}/%{name}-%{version}.tar.gz
 Group: Development/C++
 
-BuildRequires: gcc-c++
-BuildRequires: cmake3
+BuildRequires: cmake
 BuildRequires: git-core
 
 %description
@@ -34,13 +33,10 @@ Requires: libstdc++-devel%{?_isa}
 %cmake \
   -DDOCTEST_WITH_MAIN_IN_STATIC_LIB:BOOL=OFF \
   -DDOCTEST_WITH_TESTS:BOOL=ON
-%cmake_build
-
-%check
-%ctest
+%make_build
 
 %install
-%cmake_install
+%make_install -C build
 
 %files devel
 %doc README.md CHANGELOG.md CONTRIBUTING.md
