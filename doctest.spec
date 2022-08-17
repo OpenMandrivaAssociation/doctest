@@ -19,9 +19,7 @@ source, if you prefer).
 
 %package devel
 Summary: Development files for %{name}
-Provides: %{name}-static = %{?epoch:%{epoch}:}%{version}-%{release}
-Provides: %{name}%{?_isa} = %{?epoch:%{epoch}:}%{version}-%{release}
-Requires: libstdc++-devel%{?_isa}
+Requires: stdc++-devel
 
 %description devel
 %{summary}.
