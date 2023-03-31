@@ -2,7 +2,7 @@
 
 Name: doctest
 Version: 2.4.9
-Release: 1
+Release: 2
 Summary: Feature-rich header-only C++ testing framework
 License: MIT
 URL: https://github.com/doctest/doctest
