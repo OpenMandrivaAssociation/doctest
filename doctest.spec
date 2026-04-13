@@ -10,6 +10,7 @@ Source0: https://github.com/doctest/doctest/archive/v%{version}/%{name}-%{versio
 Group: Development/C++
 
 BuildRequires: cmake
+BuildRequires: make
 BuildRequires: git-core
 
 %description
