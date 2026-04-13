@@ -1,8 +1,8 @@
 %global debug_package %{nil}
 
 Name: doctest
-Version: 2.4.9
-Release: 2
+Version: 2.5.1
+Release: 1
 Summary: Feature-rich header-only C++ testing framework
 License: MIT
 URL: https://github.com/doctest/doctest
